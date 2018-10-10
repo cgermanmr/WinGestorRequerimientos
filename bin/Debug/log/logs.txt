@@ -1,0 +1,105 @@
+Title: Error
+Id: 0
+Message: An error occurred while sending the request.
+StackTrace:    at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at WinGestorRequerimientos.ClienteWeb.VB$StateMachine_5_LogOn.MoveNext() in Z:\Archivos Host\Archivos Personales\desarrollo\WinGestorRequerimientos\Negocio\HttpClient\ClienteWeb.vb:line 48
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at WinGestorRequerimientos.SesionActualWindows.VB$StateMachine_16_LogOn.MoveNext() in Z:\Archivos Host\Archivos Personales\desarrollo\WinGestorRequerimientos\Seguridad\SesionActualWindows.vb:line 503
+Date/Time: 05/04/2018 04:27:13 p.m.
+============================================================================================================
+Title: Error
+Id: 0
+Message: Object reference not set to an instance of an object.
+StackTrace:    at WinGestorRequerimientos.UsuarioSistema.GenerarTextoCorreo() in Z:\Archivos Host\Archivos Personales\desarrollo\WinGestorRequerimientos\Negocio\EnvioCredenciales\UsuarioSistema.vb:line 84
+Date/Time: 12/04/2018 10:58:05 a.m.
+============================================================================================================
+Title: Error
+Id: 0
+Message: Object reference not set to an instance of an object.
+StackTrace:    at WinGestorRequerimientos.UsuarioSistema.GenerarTextoCorreo() in Z:\Archivos Host\Archivos Personales\desarrollo\WinGestorRequerimientos\Negocio\EnvioCredenciales\UsuarioSistema.vb:line 98
+   at WinGestorRequerimientos.UsuarioSistema.Enviar() in Z:\Archivos Host\Archivos Personales\desarrollo\WinGestorRequerimientos\Negocio\EnvioCredenciales\UsuarioSistema.vb:line 28
+   at WinGestorRequerimientos.SolicitanteCredencial.Enviar() in Z:\Archivos Host\Archivos Personales\desarrollo\WinGestorRequerimientos\Negocio\EnvioCredenciales\SolicitanteCredencial.vb:line 36
+Date/Time: 12/04/2018 10:58:12 a.m.
+============================================================================================================
+Title: Error
+Id: 0
+Message: Faltan datos del usuario
+StackTrace:    at WinGestorRequerimientos.UsuarioSistema.Enviar() in Z:\Archivos Host\Archivos Personales\desarrollo\WinGestorRequerimientos\Negocio\EnvioCredenciales\UsuarioSistema.vb:line 24
+   at WinGestorRequerimientos.SolicitanteCredencial.Enviar() in Z:\Archivos Host\Archivos Personales\desarrollo\WinGestorRequerimientos\Negocio\EnvioCredenciales\SolicitanteCredencial.vb:line 36
+Date/Time: 12/04/2018 10:59:23 a.m.
+============================================================================================================
+Title: Error
+Id: 0
+Message: Ingresar al menos un correo
+StackTrace:    at WinGestorRequerimientos.SolicitanteCredencial.Enviar() in Z:\Archivos Host\Archivos Personales\desarrollo\WinGestorRequerimientos\Negocio\EnvioCredenciales\SolicitanteCredencial.vb:line 46
+Date/Time: 12/04/2018 04:20:21 p.m.
+============================================================================================================
+Title: Error
+Id: 0
+Message: Object reference not set to an instance of an object.
+StackTrace:    at WinGestorRequerimientos.UsuarioSistema.GenerarTextoCorreo() in Z:\Archivos Host\Archivos Personales\desarrollo\WinGestorRequerimientos\Negocio\EnvioCredenciales\UsuarioSistema.vb:line 131
+Date/Time: 13/04/2018 12:55:06 p.m.
+============================================================================================================
+Title: Error
+Id: 0
+Message: Object reference not set to an instance of an object.
+StackTrace:    at WinGestorRequerimientos.UsuarioSistema.GenerarTextoCorreo() in Z:\Archivos Host\Archivos Personales\desarrollo\WinGestorRequerimientos\Negocio\EnvioCredenciales\UsuarioSistema.vb:line 145
+   at WinGestorRequerimientos.UsuarioSistema.Enviar() in Z:\Archivos Host\Archivos Personales\desarrollo\WinGestorRequerimientos\Negocio\EnvioCredenciales\UsuarioSistema.vb:line 76
+   at WinGestorRequerimientos.SolicitanteCredencial.Enviar() in Z:\Archivos Host\Archivos Personales\desarrollo\WinGestorRequerimientos\Negocio\EnvioCredenciales\SolicitanteCredencial.vb:line 72
+Date/Time: 13/04/2018 12:55:38 p.m.
+============================================================================================================
+Title: Error
+Id: 0
+Message: El archivo ya existe.
+StackTrace:    at Microsoft.VisualBasic.FileSystem.Rename(String OldPath, String NewPath)
+   at WinGestorRequerimientos.UsuarioSistema.Enviar() in Z:\Archivos Host\Archivos Personales\desarrollo\WinGestorRequerimientos\Negocio\EnvioCredenciales\UsuarioSistema.vb:line 81
+   at WinGestorRequerimientos.SolicitanteCredencial.Enviar() in Z:\Archivos Host\Archivos Personales\desarrollo\WinGestorRequerimientos\Negocio\EnvioCredenciales\SolicitanteCredencial.vb:line 86
+Date/Time: 17/04/2018 09:52:03 a.m.
+============================================================================================================
+Title: Error
+Id: 0
+Message: An error occurred while sending the request.
+StackTrace:    at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at WinGestorRequerimientos.ClienteWeb.VB$StateMachine_5_LogOn.MoveNext() in Z:\Archivos Host\Archivos Personales\desarrollo\WinGestorRequerimientos\Negocio\HttpClient\ClienteWeb.vb:line 48
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at WinGestorRequerimientos.SesionActualWindows.VB$StateMachine_16_LogOn.MoveNext() in Z:\Archivos Host\Archivos Personales\desarrollo\WinGestorRequerimientos\Seguridad\SesionActualWindows.vb:line 503
+Date/Time: 07/05/2018 10:20:12 a.m.
+============================================================================================================
+Title: Error
+Id: 0
+Message: An error occurred while sending the request.
+StackTrace:    at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at WinGestorRequerimientos.ClienteWeb.VB$StateMachine_5_LogOn.MoveNext() in Z:\Archivos Host\Archivos Personales\desarrollo\WinGestorRequerimientos\Negocio\HttpClient\ClienteWeb.vb:line 48
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at WinGestorRequerimientos.SesionActualWindows.VB$StateMachine_16_LogOn.MoveNext() in Z:\Archivos Host\Archivos Personales\desarrollo\WinGestorRequerimientos\Seguridad\SesionActualWindows.vb:line 503
+Date/Time: 07/05/2018 10:21:12 a.m.
+============================================================================================================
+Title: Error
+Id: 0
+Message: An error occurred while sending the request.
+StackTrace:    at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at WinGestorRequerimientos.ClienteWeb.VB$StateMachine_5_LogOn.MoveNext() in Z:\Archivos Host\Archivos Personales\desarrollo\WinGestorRequerimientos\Negocio\HttpClient\ClienteWeb.vb:line 48
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at WinGestorRequerimientos.SesionActualWindows.VB$StateMachine_16_LogOn.MoveNext() in Z:\Archivos Host\Archivos Personales\desarrollo\WinGestorRequerimientos\Seguridad\SesionActualWindows.vb:line 503
+Date/Time: 07/05/2018 10:22:18 a.m.
+============================================================================================================

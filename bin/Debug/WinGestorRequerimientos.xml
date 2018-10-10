@@ -1,0 +1,340 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+WinGestorRequerimientos
+</name>
+</assembly>
+<members>
+<member name="F:WinGestorRequerimientos.FormAnimator.AnimationMethod.Roll">
+	<summary>
+ Rolls out from edge when showing and into edge when hiding.
+ </summary>
+	<remarks>
+ This is the default animation method and requires a direction.
+ </remarks>
+</member><member name="F:WinGestorRequerimientos.FormAnimator.AnimationMethod.Centre">
+	<summary>
+ Expands out from centre when showing and collapses into centre when hiding.
+ </summary>
+</member><member name="F:WinGestorRequerimientos.FormAnimator.AnimationMethod.Slide">
+	<summary>
+ Slides out from edge when showing and slides into edge when hiding.
+ </summary>
+	<remarks>
+ Requires a direction.
+ </remarks>
+</member><member name="F:WinGestorRequerimientos.FormAnimator.AnimationMethod.Blend">
+	<summary>
+ Fades from transaprent to opaque when showing and from opaque to transparent when hiding.
+ </summary>
+</member><member name="T:WinGestorRequerimientos.FormAnimator.AnimationMethod">
+	<summary>
+ The methods of animation available.
+ </summary>
+</member><member name="F:WinGestorRequerimientos.FormAnimator.AnimationDirection.Right">
+	<summary>
+ From left to right.
+ </summary>
+</member><member name="F:WinGestorRequerimientos.FormAnimator.AnimationDirection.Left">
+	<summary>
+ From right to left.
+ </summary>
+</member><member name="F:WinGestorRequerimientos.FormAnimator.AnimationDirection.Down">
+	<summary>
+ From top to bottom.
+ </summary>
+</member><member name="F:WinGestorRequerimientos.FormAnimator.AnimationDirection.Up">
+	<summary>
+ From bottom to top.
+ </summary>
+</member><member name="T:WinGestorRequerimientos.FormAnimator.AnimationDirection">
+	<summary>
+ The directions in which the Roll and Slide animations can be shown.
+ </summary>
+	<remarks>
+ Horizontal and vertical directions can be combined to create diagonal animations.
+ </remarks>
+</member><member name="F:WinGestorRequerimientos.FormAnimator.AW_HIDE">
+	<summary>
+ Hide the form.
+ </summary>
+</member><member name="F:WinGestorRequerimientos.FormAnimator.AW_ACTIVATE">
+	<summary>
+ Activate the form.
+ </summary>
+</member><member name="F:WinGestorRequerimientos.FormAnimator.DEFAULT_DURATION">
+	<summary>
+ The number of milliseconds over which the animation occurs if no value is specified.
+ </summary>
+</member><member name="F:WinGestorRequerimientos.FormAnimator._form">
+	<summary>
+ The form to be animated.
+ </summary>
+</member><member name="F:WinGestorRequerimientos.FormAnimator._method">
+	<summary>
+ The animation method used to show and hide the form.
+ </summary>
+</member><member name="F:WinGestorRequerimientos.FormAnimator._direction">
+	<summary>
+ The direction in which to Roll or Slide the form.
+ </summary>
+</member><member name="F:WinGestorRequerimientos.FormAnimator._duration">
+	<summary>
+ The number of milliseconds over which the animation is played.
+ </summary>
+</member><member name="P:WinGestorRequerimientos.FormAnimator.Method">
+	<summary>
+ Gets or sets the animation method used to show and hide the form.
+ </summary>
+	<value>
+ The animation method used to show and hide the form.
+ </value>
+	<remarks>
+		<b>Roll</b> is used by default if no method is specified.
+ </remarks>
+</member><member name="P:WinGestorRequerimientos.FormAnimator.Direction">
+	<summary>
+ Gets or sets the direction in which the animation is performed.
+ </summary>
+	<value>
+ The direction in which the animation is performed.
+ </value>
+	<remarks>
+ The direction is only applicable to the <b>Roll</b> and <b>Slide</b> methods.
+ </remarks>
+</member><member name="P:WinGestorRequerimientos.FormAnimator.Duration">
+	<summary>
+ Gets or sets the number of milliseconds over which the animation is played.
+ </summary>
+	<value>
+ The number of milliseconds over which the animation is played.
+ </value>
+</member><member name="P:WinGestorRequerimientos.FormAnimator.Form">
+	<summary>
+ Gets the form to be animated.
+ </summary>
+	<value>
+ The form to be animated.
+ </value>
+</member><member name="M:WinGestorRequerimientos.FormAnimator.AnimateWindow(System.IntPtr,System.Int32,System.Int32)">
+	<summary>
+ Windows API function to animate a window.
+ </summary>
+</member><member name="M:WinGestorRequerimientos.FormAnimator.#ctor(System.Windows.Forms.Form)">
+	<summary>
+ Creates a new <b></b>FormAnimator object for the specified form.
+ </summary>
+	<param name="form">
+ The form to be animated.
+ </param>
+	<remarks>
+ No animation will be used unless the <b>Method</b> and/or <b>Direction</b> properties are set independently. The <b>Duration</b> is set to quarter of a second by default.
+ </remarks>
+</member><member name="M:WinGestorRequerimientos.FormAnimator.#ctor(System.Windows.Forms.Form,WinGestorRequerimientos.FormAnimator.AnimationMethod,System.Int32)">
+	<summary>
+ Creates a new <b>FormAnimator</b> object for the specified form using the specified method over the specified duration.
+ </summary>
+	<param name="form">
+ The form to be animated.
+ </param>
+	<param name="method">
+ The animation method used to show and hide the form.
+ </param>
+	<param name="duration">
+ The number of milliseconds over which the animation is played.
+ </param>
+	<remarks>
+ No animation will be used for the <b>Roll</b> or <b>Slide</b> methods unless the <b>Direction</b> property is set independently.
+ </remarks>
+</member><member name="M:WinGestorRequerimientos.FormAnimator.#ctor(System.Windows.Forms.Form,WinGestorRequerimientos.FormAnimator.AnimationMethod,WinGestorRequerimientos.FormAnimator.AnimationDirection,System.Int32)">
+	<summary>
+ Creates a new <b>FormAnimator</b> object for the specified form using the specified method in the specified direction over the specified duration.
+ </summary>
+	<param name="form">
+ The form to be animated.
+ </param>
+	<param name="method">
+ The animation method used to show and hide the form.
+ </param>
+	<param name="direction">
+ The direction in which to animate the form.
+ </param>
+	<param name="duration">
+ The number of milliseconds over which the animation is played.
+ </param>
+	<remarks>
+ The <i>direction</i> argument will have no effect if the <b>Centre</b> or <b>Blend</b> method is
+ specified.
+ </remarks>
+</member><member name="M:WinGestorRequerimientos.FormAnimator.Form_Load(System.Object,System.EventArgs)">
+	<summary>
+ Animates the form automatically when it is loaded.
+ </summary>
+</member><member name="M:WinGestorRequerimientos.FormAnimator.Form_VisibleChanged(System.Object,System.EventArgs)">
+	<summary>
+ Animates the form automatically when it is shown or hidden.
+ </summary>
+</member><member name="M:WinGestorRequerimientos.FormAnimator.Form_Closing(System.Object,System.ComponentModel.CancelEventArgs)">
+	<summary>
+ Animates the form automatically when it closes.
+ </summary>
+</member><member name="T:WinGestorRequerimientos.FormAnimator">
+	<summary>
+ Animates a form when it is shown, hidden or closed.
+ </summary>
+	<remarks>
+ MDI child forms do not support the Blend method and only support other methods while being displayed for the first time and when closing.
+ </remarks>
+</member><member name="P:WinGestorRequerimientos.My.Resources.Resources.ResourceManager">
+	<summary>
+  Devuelve la instancia de ResourceManager almacenada en caché utilizada por esta clase.
+</summary>
+</member><member name="P:WinGestorRequerimientos.My.Resources.Resources.Culture">
+	<summary>
+  Reemplaza la propiedad CurrentUICulture del subproceso actual para todas las
+  búsquedas de recursos mediante esta clase de recurso fuertemente tipado.
+</summary>
+</member><member name="P:WinGestorRequerimientos.My.Resources.Resources._112_RefreshArrow_Blue">
+	<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member><member name="P:WinGestorRequerimientos.My.Resources.Resources.delete">
+	<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member><member name="P:WinGestorRequerimientos.My.Resources.Resources.FilteredObject_13400_32x">
+	<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member><member name="P:WinGestorRequerimientos.My.Resources.Resources.folder_Closed_32xLG">
+	<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member><member name="P:WinGestorRequerimientos.My.Resources.Resources.mail">
+	<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member><member name="P:WinGestorRequerimientos.My.Resources.Resources.ShowCodeCoverageColoring_8594_32">
+	<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member><member name="P:WinGestorRequerimientos.My.Resources.Resources.Workflow_32xLG">
+	<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member><member name="P:WinGestorRequerimientos.My.Resources.Resources.WorkItem_32xLG">
+	<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member><member name="T:WinGestorRequerimientos.My.Resources.Resources">
+	<summary>
+  Clase de recurso fuertemente tipado, para buscar cadenas traducidas, etc.
+</summary>
+</member><member name="F:WinGestorRequerimientos.Requerimiento._cargaCompleta">
+	<summary>
+ Esta propiedad indica si se a realizado el analisis del html y se han cargado los valores
+ </summary>
+	<remarks></remarks>
+</member><member name="F:WinGestorRequerimientos.ToastForm.openForms">
+	<summary>
+ The list of currently open ToastForms.
+ </summary>
+</member><member name="F:WinGestorRequerimientos.ToastForm.allowFocus">
+	<summary>
+ Indicates whether the form can receive focus or not.
+ </summary>
+</member><member name="F:WinGestorRequerimientos.ToastForm.animator">
+	<summary>
+ The object that creates the sliding animation.
+ </summary>
+</member><member name="F:WinGestorRequerimientos.ToastForm.currentForegroundWindow">
+	<summary>
+ The handle of the window that currently has focus.
+ </summary>
+</member><member name="M:WinGestorRequerimientos.ToastForm.GetForegroundWindow">
+	<summary>
+ Gets the handle of the window that currently has focus.
+ </summary>
+	<returns>
+ The handle of the window that currently has focus.
+ </returns>
+</member><member name="M:WinGestorRequerimientos.ToastForm.SetForegroundWindow(System.IntPtr)">
+	<summary>
+ Activates the specified window.
+ </summary>
+	<param name="hWnd">
+ The handle of the window to be focused.
+ </param>
+	<returns>
+ True if the window was focused; False otherwise.
+ </returns>
+</member><member name="M:WinGestorRequerimientos.ToastForm.#ctor(System.Int32,WinGestorRequerimientos.Requerimiento)">
+	<summary>
+ Creates a new ToastForm object that is displayed for the specified length of time.
+ </summary>
+	<param name="lifeTime">
+ The length of time, in milliseconds, that the form will be displayed.
+ </param>
+</member><member name="M:WinGestorRequerimientos.ToastForm.Show">
+	<summary>
+ Displays the form.
+ </summary>
+	<remarks>
+ Required to allow the form to determine the current foreground window     before being displayed.
+ </remarks>
+</member><member name="F:WinGestorRequerimientos.SesionActualWindows.URL_ERROR_1010">
+	<summary>
+Error N°: 1010
+Descripción: Usuario inválido. No se pudo verificar con éxito su estado de sesión. Si le vuelve a ocurrir, por favor verifique con el administrador del sistema. 
+ </summary>
+	<remarks></remarks>
+</member><member name="F:WinGestorRequerimientos.SesionActualWindows.URL_ERROR_515">
+	<summary>
+Error N°: 515
+Descripción: No existe sesion, o su browser no soporta el uso de cookies.(REGISTRO)
+ </summary>
+	<remarks></remarks>
+</member><member name="F:WinGestorRequerimientos.SesionActualWindows.URL_ERROR_1011">
+	<summary>
+Error N°: 1011
+Descripción: Sesión terminada. El tiempo de expiración para la sesión terminó. Por favor vuelva a logonearse.   
+ </summary>
+	<remarks></remarks>
+</member><member name="F:WinGestorRequerimientos.SesionActualWindows.URL_ERROR_1024">
+	<summary>
+  Error N°: 1024
+Descripción: El nombre de usuario gsdfsdf no existe. Por favor registrese o contáctese con el administrador del sistema.
+ </summary>
+	<remarks></remarks>
+</member><member name="F:WinGestorRequerimientos.SesionActualWindows.URL_ERROR_1023">
+	<summary>
+Error N°: 1023
+Descripción: La clave del usuario gmedina está vencida. Por favor cambie su clave ingresando en la opción 'Cambio de clave'.
+ </summary>
+	<remarks></remarks>
+</member><member name="F:WinGestorRequerimientos.SesionActualWindows.URL_ERROR_1022">
+	<summary>
+Error N°: 1022
+Descripción: La clave suministrada para el nombre de usuario gmedina no es la correcta. Por favor vuelva a intentarlo, o recurra a la opción 'Olvido de clave'.
+ </summary>
+	<remarks></remarks>
+</member><member name="F:WinGestorRequerimientos.SesionActualWindows._filtroMisColas">
+	<summary>
+ Indica si esta aplicado el filtro mis colas
+ </summary>
+	<remarks></remarks>
+</member><member name="M:WinGestorRequerimientos.SesionActualWindows.ObtenerProgresoCarga">
+	<summary>
+ Devuelve un string con el progreso de la carga
+ </summary>
+	<returns>Texto con descripción del progreso</returns>
+	<remarks></remarks>
+</member><member name="M:WinGestorRequerimientos.SesionActualWindows.GestionarJobsAbiertos">
+	<summary>
+ Establece el gestor de requerimientos con los jobs abiertos
+ </summary>
+	<remarks></remarks>
+</member>
+</members>
+</doc>
